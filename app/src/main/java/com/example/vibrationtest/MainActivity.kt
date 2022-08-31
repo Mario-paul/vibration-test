@@ -9,7 +9,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -47,13 +46,11 @@ class MainActivity : AppCompatActivity() {
         // handle click vibration button
         binding.clickVibrationButton.setOnClickListener {
 
-
             // this type of vibration requires API 29
             val vibrationEffect2: VibrationEffect
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
                 // create vibrator effect with the constant EFFECT_CLICK
-                vibrationEffect2 =
-                    VibrationEffect.createPredefined(VibrationEffect.EFFECT_CLICK)
+                vibrationEffect2 = VibrationEffect.createPredefined(VibrationEffect.EFFECT_CLICK)
 
                 // it is safe to cancel other vibrations currently taking place
                 vibrator.cancel()
