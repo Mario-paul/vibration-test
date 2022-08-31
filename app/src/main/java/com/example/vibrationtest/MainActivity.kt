@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             // this is the only type of the vibration which requires system version Oreo (API 26)
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
 
-                // this effect creates the vibration of default amplitude for 1000ms(1 sec)
+                // this effect creates the vibration of default amplitude for 10ms (0.01 sec)
                 vibrationEffect1 =
                     VibrationEffect.createOneShot(10, VibrationEffect.DEFAULT_AMPLITUDE)
 
