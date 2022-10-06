@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
                 // this effect creates the vibration of default amplitude for 10ms (0.01 sec)
                 vibrationEffect1 =
-                    VibrationEffect.createOneShot(10, VibrationEffect.DEFAULT_AMPLITUDE)
+                    VibrationEffect.createOneShot(8, VibrationEffect.DEFAULT_AMPLITUDE)
 
                 // it is safe to cancel other vibrations currently taking place
                 vibrator.cancel()
